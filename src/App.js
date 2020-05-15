@@ -1,7 +1,8 @@
 import React from "react";
+import LookbookSlider from './components/Lookbook';
 
 function App() {
-    return <div>Nothing there</div>;
+    return <LookbookSlider />
 }
 
 export default App;
