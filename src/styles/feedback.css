@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=feedback.css.map */
+.feedback-wrapper {
+  text-align: center;
+}
+
+.feedback-title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.feedback-slider {
+  max-width: 1133px;
+  height: 443px;
+  background-color: green;
+}
+
+.feedback-slider_item {
+  width: 100%;
+  height: 443px;
+  background-color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-slider_item__avatar-b {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 176px;
+  width: 176px;
+  background-color: gray;
+  border: 1px white solid;
+}
+
+.feedback-slider_item__avatar {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.feedback-slider_item__name {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=feedback.css.map */
