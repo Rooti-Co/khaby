@@ -1,0 +1,31 @@
+.container {
+  margin-top: 34px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+
+.main-slider__item {
+  width: 100%;
+  min-height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-slider__slide-text {
+  position: absolute;
+  margin-left: 50px;
+  margin-left: 0.4%;
+  bottom: 16%;
+  font-family: 'Caveat', cursive;
+  font-size: calc(1em + 1vw);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  mix-blend-mode: difference;
+  color: #eeeeee;
+}
+/*# sourceMappingURL=MainSlider.css.map */

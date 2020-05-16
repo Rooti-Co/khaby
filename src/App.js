@@ -1,8 +1,8 @@
 import React from "react";
-import AboutUs from './components/AboutUs';
+import MainSlider from './components/MainSlider';
 
 function App() {
-    return <AboutUs />
+    return <MainSlider />
 }
 
 export default App;
