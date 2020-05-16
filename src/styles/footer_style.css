@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Footer {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.Footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 27px 15% 32px 15%;
+}
+
+.Footer__box__logo-box {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.Footer__box__logo-box img {
+  margin-bottom: 96px;
+}
+
+.Footer__box__menu {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Footer__box__menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.Footer__box__menu a:hover {
+  text-decoration: underline;
+}
+
+.Footer__box__contacts {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.Footer__box__contacts__phone {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.Footer__box__contacts__design {
+  margin-top: 23px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Footer__box__contacts__design a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Footer__box__contacts__design a:hover {
+  text-decoration: underline;
+}
+
+.Footer__box__contacts__social a {
+  margin-right: 19px;
+}
+/*# sourceMappingURL=footer_style.css.map */
