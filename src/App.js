@@ -1,8 +1,8 @@
 import React from "react";
-import LookbookSlider from './components/Lookbook';
+import AboutUs from './components/AboutUs';
 
 function App() {
-    return <LookbookSlider />
+    return <AboutUs />
 }
 
 export default App;
