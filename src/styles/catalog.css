@@ -38,10 +38,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 22px;
-  margin-left: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 660px;
-  width: 350px;
+  width: 343px;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-main__item {
+    width: 320px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .catalog-main__item {
+    width: 450px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .catalog-main__item {
+    max-width: 100%;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 0px;
+  }
 }
 
 .catalog-main__img {
@@ -59,10 +85,15 @@
   position: relative;
 }
 
+@media screen and (max-width: 568px) {
+  .catalog-main__img-b {
+    height: 90%;
+  }
+}
+
 .catalog-all {
   padding-bottom: 20px;
   padding-top: 35px;
-  background-color: #fff;
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +122,40 @@
   width: 450px;
 }
 
+@media screen and (max-width: 1000px) {
+  .catalog-all__item {
+    width: 360px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-all__item {
+    width: 320px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .catalog-all__item {
+    width: 450px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .catalog-all__item {
+    max-width: 100%;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-bottom: 0px;
+  }
+}
+
 .catalog-all__img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -106,12 +171,28 @@
   position: relative;
 }
 
+@media screen and (max-width: 568px) {
+  .catalog-all__img-b {
+    height: 90%;
+  }
+}
+
 .catalog__text {
   margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+@media screen and (max-width: 568px) {
+  .catalog__text {
+    margin-right: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .catalog__sub {
@@ -132,6 +213,16 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+}
+
+@media screen and (max-width: 568px) {
+  .catalog__price {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -15px;
+  }
 }
 
 .catalog__price--old {

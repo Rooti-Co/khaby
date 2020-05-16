@@ -26,9 +26,9 @@ function GalleryItem(props) {
         <p className="catalog__text">{props.text}</p>
         {!props.sale && <p className="catalog__price">{props.price}</p>}
         {props.sale && <div className="catalog__price">
-            <span className="catalog__price catalog__price--old">{props.price} </span>
+            <span className="catalog__price--old">{props.price} </span>
             <span> / </span>
-            <span className="catalog__price catalog__price--new">{props.salePrice}</span>
+            <span className="catalog__price--new">{props.salePrice}</span>
         </div>}
     </div>
 }
