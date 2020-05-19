@@ -12,6 +12,7 @@ import PageAboutUs from "./components/pageAboutUs";
 import PageLookbookSlider from "./components/pageLookbook";
 import MainSlider from "./components/MainSlider";
 import Feedback from "./components/feedback";
+import Catalog from "./components/catalog";
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -24,9 +25,17 @@ import {
 const CatalogNavigator = () => {
     let { category } = useParams();
     return (
-        <div className="page_decorator">
-            Insert here Catalog Page Component. Render Category {category}
-        </div>
+        <>
+            {!category && <Catalog type="all" />}
+
+            {category && (
+                <div className="page_decorator">
+                    Insert here Catalog Page Component. Render Category{" "}
+                    {category}
+                    <Catalog type="shirts" />
+                </div>
+            )}
+        </>
     );
 };
 
@@ -108,6 +117,7 @@ function App() {
                 <Route path="/">
                     <>
                         <MainSlider />
+                        <Catalog type="main" />
                         <Feedback />
                     </>
                 </Route>
