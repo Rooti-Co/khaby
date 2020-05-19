@@ -1,5 +1,5 @@
 // main menu links
-export const urlMainMenu = [
+export const getMainMenuData = () => [
     { title: "Каталог", url: "/catalog" },
     { title: "Про нас", url: "/about" },
     { title: "Оплата і доставка", url: "/order_and_delivery" },
@@ -8,7 +8,7 @@ export const urlMainMenu = [
 ];
 
 // product categories
-export const urlCategoriesMenu = [
+export const getCategoriesMenuData = () => [
     { title: "Штани", url: "/catalog/trousers" },
     { title: "Сорочки", url: "/catalog/shirts" },
     { title: "Сукні", url: "/catalog/dresses" },
@@ -16,7 +16,6 @@ export const urlCategoriesMenu = [
     { title: "Костюми", url: "/catalog/suits" },
     { title: "Піджаки", url: "/catalog/jackets" },
 ];
-
-export const urlHomePage = "/";
-export const urlFavoritePage = "/favorite";
-export const urlSearchPage = "/search";
+export const getHomePageUrl = () => "/";
+export const getFavoritePageUrl = () => "/favorite";
+export const getSearchPageUrl = () => "/search";

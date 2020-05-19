@@ -7,13 +7,13 @@ import {
     useParams,
 } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import {
-    urlHomePage,
-    urlMainMenu,
-    urlCategoriesMenu,
-    urlFavoritePage,
-    urlSearchPage,
+    getHomePageUrl,
+    getMainMenuData,
+    getCategoriesMenuData,
+    getFavoritePageUrl,
+    getSearchPageUrl,
 } from "./components/configuration";
 
 // Component for display catalog in different categories
@@ -39,28 +39,30 @@ const ProductNavigator = () => {
 function App() {
     return (
         <Router>
+            {/* This is demo navigation Buttons. Remove later */}
             <div>
-                <Link className="link_decorator" to={urlHomePage}>
+                <Link className="link_decorator" to={getHomePageUrl()}>
                     Головна
                 </Link>
-                {urlMainMenu.map((item, index) => (
+                {getMainMenuData().map((item, index) => (
                     <Link className="link_decorator" to={item.url} key={index}>
                         {item.title}
                     </Link>
                 ))}
-                {urlCategoriesMenu.map((item, index) => (
+                {getCategoriesMenuData().map((item, index) => (
                     <Link className="link_decorator" to={item.url} key={index}>
                         {item.title}
                     </Link>
                 ))}
-                <Link className="link_decorator" to={urlFavoritePage}>
+                <Link className="link_decorator" to={getFavoritePageUrl()}>
                     Вибране
                 </Link>
-                <Link className="link_decorator" to={urlSearchPage}>
+                <Link className="link_decorator" to={getSearchPageUrl()}>
                     Пошук
                 </Link>
             </div>
 
+            {/* This is Main Application */}
             <Header />
 
             <Switch>
