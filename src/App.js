@@ -65,7 +65,7 @@ function App() {
                 </Link>
             </div>
 
-            {/* This is Main Application */}
+            {/* ============ This is Main Application ============ */}
             <Header />
 
             <Switch>
