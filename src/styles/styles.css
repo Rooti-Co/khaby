@@ -7,4 +7,21 @@
 body {
   background-color: orange;
 }
+
+.link_decorator {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.page_decorator {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 50px;
+}
 /*# sourceMappingURL=styles.css.map */
