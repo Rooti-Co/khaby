@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutUs from './components/AboutUs';
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -62,6 +63,9 @@ function App() {
                 </Link>
             </div>
 
+
+
+
             {/* This is Main Application */}
             <Header />
 
@@ -81,9 +85,7 @@ function App() {
                     </div>
                 </Route>
                 <Route path="/about">
-                    <div className="page_decorator">
-                        Insert here About Page Component
-                    </div>
+                    <AboutUs />
                 </Route>
                 <Route path="/lookbook">
                     <div className="page_decorator">
