@@ -7,6 +7,7 @@ import {
     useParams,
 } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./Footer";
 import {
     urlHomePage,
     urlMainMenu,
@@ -59,6 +60,7 @@ function App() {
                     Пошук
                 </Link>
             </div>
+
             <Header />
 
             <Switch>
@@ -102,8 +104,9 @@ function App() {
                     </div>
                 </Route>
             </Switch>
+
+            <Footer />
         </Router>
     );
 }
-
 export default App;

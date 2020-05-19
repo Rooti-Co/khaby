@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Footer {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.Footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 27px 15% 32px 15%;
+}
+
+@media screen and (max-width: 990px) {
+  .Footer__box {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+.Footer__box__logo-box {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.Footer__box__logo-box img {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1010px) {
+  .Footer__box__logo-box {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__logo-box {
+    display: none;
+  }
+}
+
+.Footer__box__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 140px;
+}
+
+@media screen and (max-width: 1010px) {
+  .Footer__box__menu {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
+}
+
+.Footer__box__menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.Footer__box__menu a:hover {
+  text-decoration: underline;
+}
+
+.Footer__box__contacts {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1010px) {
+  .Footer__box__contacts {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts {
+    width: 100%;
+    border-top: white 1px solid;
+    padding: 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__container__email {
+    display: inline-block;
+    margin-right: 13px;
+    padding-top: 9px;
+    margin-bottom: 8px;
+  }
+}
+
+.Footer__box__contacts__container__phone {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__container__phone {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.Footer__box__contacts__design {
+  margin-top: 23px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.Footer__box__contacts__design a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Footer__box__contacts__design a:hover {
+  text-decoration: underline;
+}
+
+.Footer__box__contacts__design div {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__design div {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__design {
+    text-align: center;
+    margin-top: 0;
+    font-size: 8px;
+    text-transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__box__contacts__social {
+    padding: 0 35% 9px 35%;
+    width: 100%;
+    border-bottom: white solid 1px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.Footer__box__contacts__social a {
+  margin-right: 19px;
+}
+/*# sourceMappingURL=footer_style.css.map */
