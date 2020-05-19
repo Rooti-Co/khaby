@@ -12,7 +12,8 @@ import Slider from "react-slick";
         autoplaySpeed: 5500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: true,
+        pauseOnHover: false
       };
       return (
         <div>
