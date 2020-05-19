@@ -17,7 +17,7 @@ class LookbookVideo extends React.Component {
       },
     };
     
-    return <YouTube videoId = {"2g811Eo7K8U"} className = { "lookbook__tape-video" } containerClassName = {"lookbook__video-container"} opts={opts} onReady={this._onReady} />;
+    return <YouTube videoId = {this.props.id} className = { "lookbook__tape-video" } tcontainerClassName = {"lookbook__video-container"} opts={opts} onReady={this._onReady} />;
   }
 
   _onReady(event) {

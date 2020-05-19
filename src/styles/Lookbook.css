@@ -53,6 +53,8 @@
 .lookbook__slider-tape .lookbook__tape-video {
   height: 135px;
   width: 180px;
+  pointer-events: none;
+  cursor: pointer !important;
 }
 
 .ytp-title-channel-logo {

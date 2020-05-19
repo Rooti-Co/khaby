@@ -26,7 +26,10 @@ import "../styles/Lookbook.css";
           breakpoint: 720,
           settings: {
             slidesToShow: 2,
-            initialSlide: 2
+            initialSlide: 2,
+            focusOnSelect: true,
+            touchMove: true,
+            
           }
         }]
       }
@@ -41,13 +44,14 @@ import "../styles/Lookbook.css";
               ref={slider => (this.slider1 = slider)}
               className="lookbook__slider-main"
               arrows={false}
+              cssEase={'linear'}
             >
-                <LookbookVideo />
-                <LookbookVideo />
-                <LookbookVideo />
-                <LookbookVideo />
-                <LookbookVideo />
-                <LookbookVideo />
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
 
             </Slider>
             <Slider
@@ -60,12 +64,12 @@ import "../styles/Lookbook.css";
               className={"lookbook__slider-tape"}
               {...settings_2}
             >
-              <LookbookVideo />
-              <LookbookVideo />
-              <LookbookVideo />
-              <LookbookVideo />
-              <LookbookVideo />
-              <LookbookVideo />
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
+              <LookbookVideo id={"eCGV26aj-mM"}/>
             </Slider>
             </div>
         </div>

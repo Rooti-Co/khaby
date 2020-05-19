@@ -42,6 +42,10 @@
         .lookbook__tape-video{   
             height: 135px;
             width: 180px;
+            pointer-events: none;
+            cursor: pointer !important;
+        }
+        .slick-prev:hover, .slick-next:hover{
         }
     }
 }
@@ -93,3 +97,4 @@
         }
     }
 }
+
