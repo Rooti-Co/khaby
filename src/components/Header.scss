@@ -74,7 +74,7 @@ $maxWidth: 940px;
       height: 100vh;
       margin: 0;
       z-index: 100;
-      background-color: white;
+      background-color: rgba(0, 0, 0, 0.4);
       transition: left 0.3s ease-in;
       &.opened {
         left: 0;
@@ -168,7 +168,7 @@ $maxWidth: 940px;
           position: absolute;
           top: 1000px;
           left: 0;
-          background-color: gray;
+          background-color: rgba(0, 0, 0, 0.4);
           transition: top 0.5s ease-in;
           z-index: 200;
           &.opened {
@@ -178,9 +178,10 @@ $maxWidth: 940px;
             position: absolute;
             right: 20px;
             top: 20px;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             z-index: 500;
+            color: white;
             img {
               width: 75%;
               height: 75%;

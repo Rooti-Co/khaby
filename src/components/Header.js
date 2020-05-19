@@ -8,6 +8,7 @@ import headerSearchMobile from "./images/header_search_mobile.svg";
 import headerLogoMobile from "./images/header_logo_mobile.png";
 import headerBurger from "./images/header_burger.svg";
 import headerCloseMobile from "./images/header_close_mobile.svg";
+import headerBackMobile from "./images/header_backarrow_mobile.svg";
 
 const Header = (props) => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -82,7 +83,7 @@ const Header = (props) => {
                     }}
                     className="header-menu-list-dropdown-mobile__close"
                   >
-                    <img src={headerCloseMobile} alt="close" />
+                    <img src={headerBackMobile} alt="close" />
                   </button>
                 )}
                 <li className="header-menu-list-dropdown__item">
