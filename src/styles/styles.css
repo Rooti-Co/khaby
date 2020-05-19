@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.temp_decorator {
+  background-color: orange;
+}
+
 .link_decorator {
   background-color: red;
   color: white;

@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import PageAboutUs from "./components/pageAboutUs";
 import PageLookbookSlider from "./components/pageLookbook";
 import MainSlider from "./components/MainSlider";
-import Feedback from "./components/feedback"
+import Feedback from "./components/feedback";
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -44,7 +44,7 @@ function App() {
     return (
         <Router>
             {/* This is demo navigation Buttons. Remove later */}
-            <div>
+            <div className="temp_decorator">
                 <Link className="link_decorator" to={getHomePageUrl()}>
                     Головна
                 </Link>
@@ -65,7 +65,6 @@ function App() {
                     Пошук
                 </Link>
             </div>
-
 
             {/* ============ This is Main Application ============ */}
             <Header />
@@ -99,6 +98,11 @@ function App() {
                 <Route path="/order_and_delivery">
                     <div className="page_decorator">
                         Insert here Order&Delivery Page Component
+                    </div>
+                </Route>
+                <Route path="/search">
+                    <div className="page_decorator">
+                        Insert here Search Page Component
                     </div>
                 </Route>
                 <Route path="/">
