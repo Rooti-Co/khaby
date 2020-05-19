@@ -32,14 +32,17 @@ function FooterLogoBox (){
 function FooterContacts(){
     return (
         <div className="Footer__box__contacts">
-            <div> <img src={email} alt=""></img> khaby@gmail.com</div>
-            <div className="Footer__box__contacts__phone"> <img src={phone} alt=""></img> +38012345678</div>
+            <div className="Footer__box__contacts__container">
+            <div className="Footer__box__contacts__container__email"> <img src={email} alt=""></img> khaby@gmail.com</div>
+            <div className="Footer__box__contacts__container__phone"> <img src={phone} alt=""></img> +38012345678</div>
+            </div>
             <div className="Footer__box__contacts__social">
                 <a href="https://www.instagram.com/khaby_/?hl=ru"><img src={insta} alt=""></img> </a>
                 <a href="https://www.facebook.com/khabybase/"><img src={fb} alt=""></img> </a>
             </div>
             <div className="Footer__box__contacts__design">
-                <p>ДИЗАЙН САЙТУ:</p>
+                <div>2018-2020 khaby bases clothes</div>
+                <p>дизайн сайту:</p>
                 <p><a href="https://www.behance.net/yul6_okb501">https://www.behance.net/yul6_okb501</a></p>
             </div>
 
