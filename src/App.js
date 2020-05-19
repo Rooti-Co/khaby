@@ -9,6 +9,7 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageAboutUs from "./components/pageAboutUs";
+import PageLookbookSlider from "./components/pageLookbook";
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -85,9 +86,7 @@ function App() {
                     <PageAboutUs />
                 </Route>
                 <Route path="/lookbook">
-                    <div className="page_decorator">
-                        Insert here Lookbook Page Component
-                    </div>
+                    <PageLookbookSlider />
                 </Route>
                 <Route path="/contact">
                     <div className="page_decorator">
