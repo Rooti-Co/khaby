@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageAboutUs from "./components/pageAboutUs";
 import PageLookbookSlider from "./components/pageLookbook";
+import MainSlider from "./components/MainSlider";
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -99,9 +100,9 @@ function App() {
                     </div>
                 </Route>
                 <Route path="/">
-                    <div className="page_decorator">
-                        Insert here Main Page Component
-                    </div>
+                    <>
+                        <MainSlider />
+                    </>
                 </Route>
             </Switch>
 
