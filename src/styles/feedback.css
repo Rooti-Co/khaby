@@ -1,0 +1,138 @@
+.feedback-wrapper {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .feedback-title {
+    font-size: 18px;
+  }
+}
+
+.feedback-slider {
+  margin-top: 25px;
+  max-width: 1133px;
+  height: 443px;
+  max-height: 443px;
+}
+
+@media screen and (max-width: 1133px) {
+  .feedback-slider {
+    max-width: 100%;
+  }
+}
+
+.feedback-slider_item {
+  text-align: center;
+  width: 100%;
+  height: 443px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback-slider_item__avatar-b {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 176px;
+  width: 176px;
+  border: 1px white solid;
+}
+
+.feedback-slider_item__avatar {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.feedback-slider_item__user-b {
+  height: 50%;
+}
+
+.feedback-slider_item__name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.feedback-slider_item__comment {
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 150%;
+  font-size: 14px;
+  height: 49%;
+}
+
+.feedback__next {
+  z-index: 10;
+  top: 50px;
+  position: absolute;
+  right: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .feedback__next {
+    right: 2%;
+  }
+}
+
+.feedback__next:active {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+.feedback__next:hover path {
+  fill: rgba(78, 78, 78, 0.555);
+  cursor: pointer;
+}
+
+.feedback__prev {
+  z-index: 10;
+  top: 50px;
+  position: absolute;
+  left: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  .feedback__prev {
+    left: 2%;
+  }
+}
+
+.feedback__prev:active {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+.feedback__prev:hover path {
+  fill: rgba(78, 78, 78, 0.555);
+  cursor: pointer;
+}
+/*# sourceMappingURL=feedback.css.map */

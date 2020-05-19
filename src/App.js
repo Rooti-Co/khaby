@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import PageAboutUs from "./components/pageAboutUs";
 import PageLookbookSlider from "./components/pageLookbook";
 import MainSlider from "./components/MainSlider";
+import Feedback from "./components/feedback"
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -65,6 +66,7 @@ function App() {
                 </Link>
             </div>
 
+
             {/* ============ This is Main Application ============ */}
             <Header />
 
@@ -102,6 +104,7 @@ function App() {
                 <Route path="/">
                     <>
                         <MainSlider />
+                        <Feedback />
                     </>
                 </Route>
             </Switch>
