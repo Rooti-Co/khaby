@@ -6,7 +6,9 @@ import {
     Link,
     useParams,
 } from "react-router-dom";
+import Header from "./components/Header";
 
+// Component for display catalog in different categories
 const CatalogNavigator = () => {
     let { category } = useParams();
     return (
@@ -16,6 +18,7 @@ const CatalogNavigator = () => {
     );
 };
 
+// Component for display product by ID
 const ProductNavigator = () => {
     let { product_id } = useParams();
     return (
@@ -28,6 +31,7 @@ const ProductNavigator = () => {
 function App() {
     return (
         <Router>
+            <Header />
             <div>Use React Router for page navigation</div>
             <div>
                 <Link className="link_decorator" to="/">
