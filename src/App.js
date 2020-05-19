@@ -7,6 +7,13 @@ import {
     useParams,
 } from "react-router-dom";
 import Header from "./components/Header";
+import {
+    urlHomePage,
+    urlMainMenu,
+    urlCategoriesMenu,
+    urlFavoritePage,
+    urlSearchPage,
+} from "./components/configuration";
 
 // Component for display catalog in different categories
 const CatalogNavigator = () => {
@@ -31,43 +38,29 @@ const ProductNavigator = () => {
 function App() {
     return (
         <Router>
-            <Header />
-            <div>Use React Router for page navigation</div>
             <div>
-                <Link className="link_decorator" to="/">
-                    Головна сторінка
+                <Link className="link_decorator" to={urlHomePage}>
+                    Головна
                 </Link>
-                <Link className="link_decorator" to="/catalog">
-                    Каталог
-                </Link>
-                <Link className="link_decorator" to="/catalog/category1">
-                    Каталог - Категорія 1
-                </Link>
-                <Link className="link_decorator" to="/catalog/category2">
-                    Каталог - Категорія 2
-                </Link>
-                <Link className="link_decorator" to="/products/product_id_1">
-                    Опис товару №1
-                </Link>
-                <Link className="link_decorator" to="/products/product_id_2">
-                    Опис товару №2
-                </Link>
-                <Link className="link_decorator" to="/about">
-                    Про нас
-                </Link>
-                <Link className="link_decorator" to="/order_and_delivery">
-                    Оплата та доставка
-                </Link>
-                <Link className="link_decorator" to="/lookbook">
-                    Lookbook
-                </Link>
-                <Link className="link_decorator" to="/contact">
-                    Контакти
-                </Link>
-                <Link className="link_decorator" to="/favorite">
+                {urlMainMenu.map((item, index) => (
+                    <Link className="link_decorator" to={item.url} key={index}>
+                        {item.title}
+                    </Link>
+                ))}
+                {urlCategoriesMenu.map((item, index) => (
+                    <Link className="link_decorator" to={item.url} key={index}>
+                        {item.title}
+                    </Link>
+                ))}
+                <Link className="link_decorator" to={urlFavoritePage}>
                     Вибране
                 </Link>
+                <Link className="link_decorator" to={urlSearchPage}>
+                    Пошук
+                </Link>
             </div>
+            <Header />
+
             <Switch>
                 <Route
                     path="/catalog/:category"
