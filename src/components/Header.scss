@@ -59,7 +59,7 @@ $maxWidth: 940px;
     @media screen and (max-width: $maxWidth) {
       height: 30px;
       width: 50px;
-      margin-left: 20px;
+      margin-left: 60px;
     }
   }
   &-menu {
@@ -168,7 +168,7 @@ $maxWidth: 940px;
           position: absolute;
           top: 1000px;
           left: 0;
-          background-color: rgba(0, 0, 0, 0.4);
+          background-color: rgba(0, 0, 0, 0.95);
           transition: top 0.5s ease-in;
           z-index: 200;
           &.opened {
@@ -176,7 +176,7 @@ $maxWidth: 940px;
           }
           .header-menu-list-dropdown-mobile__close {
             position: absolute;
-            right: 20px;
+            left: 20px;
             top: 20px;
             width: 40px;
             height: 40px;
@@ -203,10 +203,12 @@ $maxWidth: 940px;
           @media screen and (max-width: $maxWidth) {
             flex: 0 0 85px;
             width: 250px;
-            margin-bottom: 3px;
+            margin-top: 3px;
+            margin-left: 100px;
             border-radius: 3px;
             background-color: white;
             position: relative;
+
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           }
           width: 65px;
@@ -226,6 +228,7 @@ $maxWidth: 940px;
               height: 100%;
               display: flex;
               align-items: center;
+              justify-content: center;
               font-size: 18px;
               font-weight: 600;
             }
@@ -247,7 +250,7 @@ $maxWidth: 940px;
   &-right-block {
     @media screen and (max-width: $maxWidth) {
       flex: 0;
-      width: 50px;
+      width: 100px;
     }
     flex: 0 1 258px;
     display: flex;
@@ -256,7 +259,7 @@ $maxWidth: 940px;
     &__likes {
       width: 20px;
       height: 20px;
-      margin-right: 20px;
+      margin-right: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -338,6 +341,14 @@ $maxWidth: 940px;
         @media screen and (max-width: $maxWidth) {
           width: 100%;
           font-size: 14px;
+        }
+      }
+      &-button {
+        width: 20px;
+        height: 20px;
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }

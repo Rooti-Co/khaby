@@ -146,6 +146,7 @@ const Header = (props) => {
             </div>
           ) : (
             <button
+              className="header-right-block__search-button"
               onClick={() => {
                 setSearchOpened(!searchOpened);
               }}
