@@ -13,6 +13,7 @@ import PageLookbookSlider from "./components/pageLookbook";
 import MainSlider from "./components/MainSlider";
 import Feedback from "./components/feedback";
 import Catalog from "./components/catalog";
+import PaymentInfo from "./components/payment-info";
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -105,9 +106,7 @@ function App() {
                     </div>
                 </Route>
                 <Route path="/order_and_delivery">
-                    <div className="page_decorator">
-                        Insert here Order&Delivery Page Component
-                    </div>
+                    <PaymentInfo />
                 </Route>
                 <Route path="/search">
                     <div className="page_decorator">
