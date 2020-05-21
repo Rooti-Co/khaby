@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  //   box-sizing: content-box;
+  text-align: center;
+}
+
+body {
+  background: rgb(241, 241, 241);
+}
+
+.container {
+  margin: auto;
+  margin-top: 20vh;
+  width: 712px;
+  height: 534px;
+  background: white;
+  border: solid 1px rgb(212, 210, 210);
+  border-radius: 20px;
+  display: flex;
+  &__leftSide {
+    overflow: auto;
+    font-family: "Lato", sans-serif;
+    border-radius: 20px 00px 0px 20px;
+    width: 300px;
+    height: 532px;
+    background: rgb(86, 9, 121);
+    background: linear-gradient(
+      34deg,
+      rgba(86, 9, 121, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+  }
+  &__rightSide {
+    width: 100%;
+    height: 100%;
+    &__head {
+      position: relative;
+
+      width: 100%;
+      height: 20%;
+      border-radius: 0px 20px 20px 0px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        21deg,
+        rgba(255, 255, 255, 1) 67%,
+        rgba(0, 241, 255, 1) 100%
+      );
+      &__title {
+        padding-top: 30px;
+        color: rgb(0, 0, 0);
+      }
+    }
+
+    &__content {
+      font-family: "Josefin Sans", sans-serif !important;
+      // background: rgba(0, 0, 0, 0.075);
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: auto;
+      position: relative;
+    }
+  }
+}
+
+.point {
+  border-top: solid 1px rgba(128, 128, 128, 0.295);
+  border-left: solid 1px rgba(128, 128, 128, 0.295);
+  border-right: solid 1px rgba(128, 128, 128, 0.295);
+  background: rgba(219, 247, 255, 0.685);
+  width: 90%;
+  height: 10%;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  position: relative;
+
+  &--active {
+    background: rgb(0, 255, 119);
+    background: linear-gradient(
+      252deg,
+      rgba(0, 255, 119, 1) 0%,
+      rgba(238, 173, 255, 1) 0%,
+      rgba(0, 241, 255, 1) 100%
+    );
+  }
+  &--check-text {
+    text-decoration: line-through;
+    color: grey;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      61deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(240, 255, 181, 1) 62%,
+      rgba(129, 255, 0, 1) 100%
+    );
+    // filter: grayscale(100%);
+  }
+}
+.check_IconOFF {
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.check_IconON {
+  font-size: 21px;
+  color: greenyellow;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+}
+// спливаюча підказка про двойний клік для деактивації  check_IconON
+
+.check_IconON:hover::after {
+  content: attr(data-title);
+
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  z-index: 1;
+  color: black;
+  background: rgba(255, 255, 255, 0.863);
+  font-family: "Raleway", sans-serif;
+  font-size: 11px; /* Размер текста подсказки */
+  padding: 5px 10px; /* Поля */
+}
+.makerList {
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  // width: 250px;
+  padding: 14px;
+  text-decoration: underline;
+  text-decoration-color: rgba(207, 206, 206, 0.411);
+}
+
+.AddListButton {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 35px;
+}
+
+.AddPointButton {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  right: 22px;
+  top: 22px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 1px gray;
+  color: rgb(54, 54, 54);
+  font-size: 33px;
+}
+.IconDelete {
+  position: absolute;
+  right: 20px;
+  color: rgb(95, 95, 95);
+  font-size: 20px;
+}
+.IconEdit {
+  position: absolute;
+  right: 50px;
+  font-size: 20px;
+  color: rgb(52, 199, 22);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.inputInPoint {
+  width: 80%;
+  padding: 2.5px;
+}
