@@ -21,6 +21,8 @@ import {
     getSearchPageUrl,
 } from "./components/configuration";
 
+import { LoadedPage } from "./components/demoLoadedPage";
+
 // Component for display catalog in different categories
 const CatalogNavigator = () => {
     let { category } = useParams();
@@ -105,9 +107,7 @@ function App() {
                     </div>
                 </Route>
                 <Route path="/order_and_delivery">
-                    <div className="page_decorator">
-                        Insert here Order&Delivery Page Component
-                    </div>
+                    <LoadedPage />
                 </Route>
                 <Route path="/search">
                     <div className="page_decorator">

@@ -19,3 +19,5 @@ export const getCategoriesMenuData = () => [
 export const getHomePageUrl = () => "/";
 export const getFavoritePageUrl = () => "/favorite";
 export const getSearchPageUrl = () => "/search";
+
+export const wordPressAPIUrl = "http://64.225.74.130/wordpress/?rest_route=";
