@@ -5,21 +5,23 @@ import email from "./footerAssets/Email.svg";
 import phone from "./footerAssets/Phone.svg";
 import insta from "./footerAssets/Insta.svg";
 import fb from "./footerAssets/Fb.svg";
+import {Link} from "react-router-dom";
+
 
 function FooterMenuItem(props) {
     return (
         <div>
-            <a href={props.page}> {props.text} </a>
+            <Link to={props.page}> {props.text} </Link>
         </div>
     );
 }
 function FooterMenu() {
     return (
         <div className="Footer__box__menu">
-            <FooterMenuItem page="#" text="Каталог" />
-            <FooterMenuItem page="#" text="Про нас" />
-            <FooterMenuItem page="#" text="Lookbook" />
-            <FooterMenuItem page="#" text="Оплата та доставка" />
+            <FooterMenuItem page="/catalog" text="Каталог" />
+            <FooterMenuItem page="/about" text="Про нас" />
+            <FooterMenuItem page="/lookbook" text="Lookbook" />
+            <FooterMenuItem page="/order_and_delivery" text="Оплата та доставка" />
         </div>
     );
 }
