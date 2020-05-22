@@ -13,6 +13,7 @@ import PageLookbookSlider from "./components/pageLookbook";
 import MainSlider from "./components/MainSlider";
 import Feedback from "./components/feedback";
 import Catalog from "./components/catalog";
+import Contact from './components/Contact';
 import {
     getHomePageUrl,
     getMainMenuData,
@@ -102,9 +103,7 @@ function App() {
                     <PageLookbookSlider />
                 </Route>
                 <Route path="/contact">
-                    <div className="page_decorator">
-                        Insert here Contact Page Component
-                    </div>
+                <Contact/>
                 </Route>
                 <Route path="/order_and_delivery">
                     <LoadedPage />
