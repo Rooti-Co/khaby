@@ -3,22 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 .Footer{
     width: 100%;
     background-color: black;
     position: absolute;
-    bottom: 0;
+    bottom: -250px;
+    @media screen and (max-width:455px){
+        bottom: -220px;
+    }
+    @media screen and (max-width:860px){
+        bottom: -300px;
+    }
     &__box{
+        max-width:1140px;
         display: flex;
         justify-content: space-between;
-        margin: 27px 15% 32px 15%;
+        margin: 27px auto 32px auto;
+        padding: 0 10px 0 10px;
         @media screen and (max-width:990px){
             margin: 10px 
         }
         @media screen and (max-width:768px){
             flex-direction: column;
             align-items: center;
-            margin:0
+            margin:0;
         }
         &__logo-box{
             font-family: Lato;
