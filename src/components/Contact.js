@@ -21,7 +21,7 @@ export default function Contact(){
       <div className="Contact__box__phone"> <img src={icon_phone} alt=""></img> +38 096 620 2081</div>
       <div className="Contact__box_mail"> <img src={icon_mail} alt=""></img> itatarchuk90@gmail.com</div>
       <div className="Contact__box__contacts__social">
-                <a href="www.facebook.com/khabybase/">
+                <a href="https://www.facebook.com/khabybase/">
                     <img src={icon_facebook} alt=""></img>{"www.facebook.com/khabybase/"}
                 </a>
                 <a href="https://www.instagram.com/khaby_/?hl=ru">
