@@ -1,0 +1,59 @@
+.item{
+    font-family: "Lato", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 42px;
+    grid-template-areas: ". .";
+
+    &-description {
+        &>h1 {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 16px 0 16px 0;
+        }
+
+        &>h2 {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 16px 0 16px 0;
+        }
+
+        &>h4 {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;  
+            margin: 34px 0 16px 0;
+  
+        }
+        &>p {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 16px 0 28px 0;
+
+        }
+
+        &-button {
+            width: 216px;
+            height: 48px;
+            background: #000000;
+            color: white;
+            border-radius: 3px;
+            border: 1px solid #000000;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
