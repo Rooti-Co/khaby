@@ -20,7 +20,7 @@ import {
     getFavoritePageUrl,
     getSearchPageUrl,
 } from "./components/configuration";
-
+import { Modal } from "./components/modal_window";
 import { LoadedPage } from "./components/demoLoadedPage";
 
 // Component for display catalog in different categories
@@ -110,9 +110,7 @@ function App() {
                     <LoadedPage />
                 </Route>
                 <Route path="/search">
-                    <div className="page_decorator">
-                        Insert here Search Page Component
-                    </div>
+                    <Modal />
                 </Route>
                 <Route path="/">
                     <>
