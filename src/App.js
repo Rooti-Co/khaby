@@ -56,19 +56,6 @@ function App() {
         <Router>
             {/* This is demo navigation Buttons. Remove later */}
             <div className="temp_decorator">
-                <Link className="link_decorator" to={getHomePageUrl()}>
-                    Головна
-                </Link>
-                {getMainMenuData().map((item, index) => (
-                    <Link className="link_decorator" to={item.url} key={index}>
-                        {item.title}
-                    </Link>
-                ))}
-                {getCategoriesMenuData().map((item, index) => (
-                    <Link className="link_decorator" to={item.url} key={index}>
-                        {item.title}
-                    </Link>
-                ))}
                 <Link className="link_decorator" to={getFavoritePageUrl()}>
                     Вибране
                 </Link>
